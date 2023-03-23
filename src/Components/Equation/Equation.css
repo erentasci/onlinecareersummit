@@ -1,0 +1,102 @@
+.equation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  padding: 0 10vw;
+  margin-top: 128px;
+}
+
+.equation div {
+  width: 21vw;
+  height: 21vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.equationTextContainer {
+  opacity: 0.8;
+  background-color: #1f1f65;
+  transition: all 4s ease-out;
+}
+
+.equationSymbol {
+  font-size: 5.125rem;
+}
+
+.equationTextContainer p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.equationImageWrapper {
+  overflow: none;
+}
+
+.equationImage {
+  transition: all 6s ease-out;
+  background-size: 21vw 21vw;
+}
+
+.equationImageWrapper:hover .equationImage {
+  background-size: 600px 600px;
+}
+
+.equationTextContainer:hover {
+  opacity: 0.7;
+}
+
+.equationSymbol {
+  font-weight: 500;
+  color: #1f1f65;
+}
+
+@media screen and (max-width: 900px) {
+  .equation {
+    width: 80vw;
+    margin-top: 80px;
+  }
+
+  .equationTextContainer p {
+    font-size: 1rem;
+  }
+
+  .equationSymbol {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .equation div {
+    width: 22vw;
+    height: 22vw;
+  }
+
+  .equationImage {
+    background-size: 22vw 22vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .equation {
+    width: 85vw;
+    padding: 0 7.5vw;
+    margin-top: 64px;
+  }
+
+  .equationSymbol {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .equation div {
+    width: 24.5vw;
+    height: 24.5vw;
+  }
+
+  .equationImage {
+    background-size: 24.5vw 24.5vw;
+  }
+}

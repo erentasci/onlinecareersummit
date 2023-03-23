@@ -1,0 +1,15 @@
+.FAQ {
+  width: 95vw;
+  margin: 0 auto;
+  padding: 0 1rem 1rem 1rem;
+}
+.questions {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}

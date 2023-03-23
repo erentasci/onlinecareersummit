@@ -1,0 +1,110 @@
+.whoCanJoin {
+  margin-top: 128px;
+  width: 80vw;
+  padding: 0 10vw;
+  gap: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.whoCanJoinheaderContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.whoCanJoinheaderContainer h2 {
+  color: #1f1f65;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+}
+
+.whoCanJoinheaderContainer h3 {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: left;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.whoCanJoinText {
+  width: 50vw;
+}
+
+.whoCanJoinText p {
+  font-size: 1.2rem;
+}
+
+.whoCanJoinTextCTA {
+  margin-top: 32px;
+  background-color: #1f1f65;
+  color: #ffffff;
+  display: inline-block;
+  padding: 24px 40px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.whoCanJoinTextCTA:hover {
+  background-color: #1f1f65;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .whoCanJoin {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 64px;
+    gap: 24px;
+  }
+
+  .whoCanJoinheaderContainer {
+    gap: 0px;
+  }
+
+  .whoCanJoinheaderContainer h2 {
+    text-align: center;
+    width: auto;
+  }
+
+  .whoCanJoinheaderContainer h3 {
+    text-align: center;
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  .whoCanJoinText {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .whoCanJoinText p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .whoCanJoinheaderContainer h3 {
+    font-size: 1.8rem;
+  }
+
+  .whoCanJoin {
+    width: 85vw;
+  }
+  .whoCanJoinText {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .whoCanJoinheaderContainer h3 {
+    font-size: 1.8rem;
+  }
+}

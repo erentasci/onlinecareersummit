@@ -1,0 +1,133 @@
+.timeTables {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-top: 120px;
+  background-size: cover;
+  padding-bottom: 128px;
+}
+
+.timeTables h2 {
+  color: #ffffff;
+}
+
+.timeTablesContainer {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 56px;
+}
+
+.timeTable {
+  width: 32vw;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.tableHeader {
+  text-align: center;
+  padding: 30px;
+  color: #ffffff;
+  background-color: #7676bc;
+}
+.tableHeader h3 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableRow {
+  display: flex;
+}
+
+.tableRow p {
+  background-color: #ffffff;
+  font-size: 1.05rem;
+  border: 1px solid #f4f4f4;
+  transition: all 0.4s ease-in;
+}
+
+.tableRow p:first-of-type {
+  /*Hours*/
+  font-weight: 600;
+  text-align: center;
+  /* padding: 24px 0; */
+  padding: 20px 12px;
+  width: 10vw;
+  white-space: nowrap;
+}
+
+.tableRow p:last-of-type {
+  /*Texts*/
+  text-align: center;
+  width: 25vw;
+  padding: 24px 2vw;
+  /* padding: 24px 2vw; */
+}
+
+.tableRow:nth-of-type(2n) p:first-of-type {
+  background-color: #f6f6f6;
+}
+
+.tableRow:hover p {
+  background-color: #1f1f65;
+  color: #ffffff;
+  border: 1px solid #1f1f65;
+  transition: all 0s ease-in;
+}
+
+.tableRow:nth-of-type(2n):hover p:first-of-type {
+  background-color: #1f1f65;
+  color: #ffffff;
+  border: 1px solid #1f1f65;
+}
+
+@media screen and (max-width: 1500px) {
+  .timeTable {
+    width: 32vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .timeTables {
+    padding-bottom: 128px;
+  }
+
+  .timeTablesContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .timeTable {
+    width: 80vw;
+  }
+
+  .tableRow p:first-of-type {
+    width: 25vw;
+  }
+
+  .tableRow p:last-of-type {
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .timeTables {
+    padding-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  .timeTables h2 {
+    margin-top: 80px;
+  }
+
+  .timeTablesContainer {
+    margin-top: 40px;
+  }
+}

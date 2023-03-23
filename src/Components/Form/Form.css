@@ -1,0 +1,325 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.form h2 {
+  margin-bottom: 64px;
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 52vw;
+  padding: 0 24vw;
+  gap: 40px;
+}
+
+.formSubContainer {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+input,
+textarea,
+select {
+  height: 56px;
+  width: 100%;
+  padding: 0 32px !important;
+  font-size: 1rem !important;
+  outline: none !important;
+  border: none !important;
+  border-radius: 6px;
+  transition: all 0.4s;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+.form-control:focus,
+.form-control:focus + .flag-dropdown,
+.form-control:focus + .flag-dropdown .country-list,
+.flag-dropdown .selected-flag:hover,
+input[type="submit"]:hover,
+form li:hover {
+  background-color: #7676bc !important;
+  color: #ffffff !important;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder,
+select:focus::placeholder {
+  color: #ffffff;
+}
+
+input[type="email"] {
+  width: calc(100% - 64px);
+}
+
+textarea {
+  padding: 32px !important;
+  width: calc(100% - 64px);
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #7676bc;
+  color: #ffffff;
+  margin-bottom: 128px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+input[type="submit"]:focus {
+  background-color: #7676bc !important;
+  color: #ffffff !important;
+}
+
+input[type="checkbox"] {
+  align-self: center;
+  width: 24px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+form ul {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: white;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 52vw;
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+form li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.formCheckContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+}
+
+.formCheckContainer p a {
+  text-decoration: underline;
+}
+
+/*Phone Number Input's*/
+
+.form-control {
+  height: 56px !important;
+  width: 100% !important;
+  padding: 0 120px !important;
+}
+
+.flag-dropdown {
+  background-color: #ffffff !important;
+  display: flex;
+  justify-content: center;
+  outline: none !important;
+  border: none !important;
+  width: 10% !important;
+}
+
+.flag-dropdown {
+  left: 0px !important;
+  transition: all 0.4s !important;
+}
+
+.arrow {
+  transform: scale(1.5);
+  left: 40px !important;
+}
+
+.country-list {
+  display: flex;
+  flex-direction: column;
+  top: 46px;
+  box-shadow: none !important;
+  left: 1px;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag .up {
+  border-bottom: none !important;
+}
+
+.highlight {
+  background-color: #7676bc !important;
+  color: #ffffff !important;
+}
+
+.dial-code {
+  color: #ffffff !important;
+}
+
+.react-tel-input .selected-flag:hover {
+  background-color: #ffffff !important;
+}
+
+.react-tel-input .open {
+  background-color: #7676bc !important;
+}
+
+.form-control:focus + .flag-dropdown .arrow {
+  border-top: 4px solid #fff !important;
+}
+
+input:focus + .flag-dropdown .selected-flag:hover {
+  background-color: #7676bc !important;
+}
+
+@media screen and (max-width: 1500px) {
+  form {
+    gap: 28px;
+    width: 72vw;
+  }
+
+  form ul {
+    width: 72vw;
+  }
+
+  .formSubContainer {
+    gap: 24px;
+  }
+
+  input,
+  textarea,
+  select {
+    height: 72px;
+  }
+
+  .form-control {
+    height: 72px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form h2 {
+    margin-bottom: 32px;
+  }
+
+  form {
+    gap: 24px;
+    width: 80vw;
+  }
+
+  form ul {
+    width: 80vw;
+  }
+
+  .formSubContainer {
+    gap: 16px;
+  }
+
+  input,
+  textarea,
+  select {
+    height: 64px;
+  }
+
+  .form-control {
+    height: 64px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  form {
+    gap: 20px;
+  }
+
+  input,
+  textarea,
+  select {
+    height: 56px;
+  }
+
+  .form-control {
+    height: 56px !important;
+  }
+
+  #Department {
+    width: 43px;
+  }
+
+  #Class {
+    width: 110px;
+    padding: 0 0 0 8px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    gap: 14px;
+  }
+
+  .form-control {
+    height: 56px !important;
+  }
+
+  .formSubContainer {
+    gap: 12px;
+  }
+
+  input[type="email"] {
+    width: calc(100% - 32px);
+  }
+
+  input,
+  textarea,
+  select {
+    height: 48px;
+    width: 100%;
+    padding: 0 16px !important;
+  }
+
+  textarea {
+    padding: 16px !important;
+    width: calc(100% - 32px);
+  }
+
+  .form-control {
+    height: 48px !important;
+    padding: 0 72px !important;
+  }
+
+  #Department {
+    width: 55px;
+  }
+
+  #Class {
+    width: 93px;
+  }
+
+  input[type="checkbox"] {
+    width: 16px;
+    margin-right: -8px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #Department {
+    width: 42px;
+  }
+
+  #Class {
+    width: 105px;
+  }
+}

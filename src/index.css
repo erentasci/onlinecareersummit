@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--white);
+}
+
+body {
+  width: 100vw;
+}
+
+html {
+  width: 100vw;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.whatExplainer,
+.whyExplainer,
+.whatIsInIt {
+  padding: 64px 0 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 990;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 120px auto 0 auto;
+  font-size: 2.85rem;
+  font-weight: 800;
+  z-index: 997;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+li {
+  list-style: square;
+  display: inline;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+
+  h2 {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .whatExplainer,
+  .whyExplainer,
+  .whatIsInIt,
+  .pastToToday {
+    padding: 40px 0 56px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 8px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .whatExplainer,
+  .whyExplainer,
+  .whatIsInIt,
+  .pastToToday {
+    padding: 32px 0 40px;
+  }
+}
